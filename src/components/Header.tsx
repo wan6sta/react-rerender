@@ -2,12 +2,40 @@ import { Link, LinkProps } from "react-router-dom";
 
 const links: LinkProps[] = [
   {
-    title: "useState",
-    to: "/use-state",
+    title: "Пример 1",
+    to: "/example1",
   },
   {
-    title: "memo",
-    to: "/memo",
+    title: "Пример 2",
+    to: "/example2",
+  },
+  {
+    title: "Пример 3",
+    to: "/example3",
+  },
+  {
+    title: "Пример 4",
+    to: "/example4",
+  },
+  {
+    title: "Пример 5",
+    to: "/example5",
+  },
+  {
+    title: "useRef",
+    to: "/use-ref",
+  },
+  {
+    title: "ContextPage",
+    to: "/context",
+  },
+  {
+    title: "ReduxPage",
+    to: "/redux",
+  },
+  {
+    title: "Ссылки",
+    to: "/links",
   },
 ];
 
@@ -19,9 +47,15 @@ export const Header = () => {
   ));
 
   return (
-    <div className="h-14 bg-gray-800 flex items-center gap-2.5 px-3">
-      <div>{items}</div>
-      <a target="_blank">GitHub</a>
+    <div className="flex items-center justify-around h-14 bg-gray-800 px-3">
+      <div className="flex items-center gap-2.5">{items}</div>
+      <a
+        className="text-slate-50 text-lg"
+        target="_blank"
+        href="https://github.com/wan6sta/react-rerender"
+      >
+        GitHub
+      </a>
     </div>
   );
 };
